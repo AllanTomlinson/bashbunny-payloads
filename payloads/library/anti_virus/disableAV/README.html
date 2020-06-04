@@ -26,7 +26,9 @@
 Version: Version 1.1</p>
 <h2 id="description">Description</h2>
 <p>Boiler Plate for running ducky scripts on the Bash Bunny</p>
-<p>Disable TP (Tamper Protection) on Win 10 anti virus.<br>Launch Powershell as Administrator.<br>Roll back Win 10 Defender AV definitions to &quot;none&quot;.  </p>
+<p>Disable TP (Tamper Protection) on Win 10 anti virus.<br>Launch Powershell as Administrator.<br>Roll back Win 10 Defender AV definitions to &quot;none&quot;.<br>Need to disable Real Time Protection too, try:
+<code>MpCmdRun.exe&quot; -RemoveDefinitions -All Set-MpPreference -DisableIOAVProtection $true</code>
+Then run laZagne.exe All</p>
 <h2 id="configuration">Configuration</h2>
 <p>HID or HID STORAGE</p>
 <h2 id="requirements">Requirements</h2>
