@@ -1,3 +1,10 @@
 #!/bin/bash
 #This configuration file is used to set default variables
 DUCKY_LANG gb
+GET HOST_IP
+
+#GET TARGET_IP
+#GET TARGET_HOSTNAME
+# makes no sense if we are not in an Ethernet Mode
+
+GET SWITCH_POSITION
